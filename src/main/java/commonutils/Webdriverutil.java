@@ -78,13 +78,14 @@ public class Webdriverutil {
 		JavascriptExecutor jse= (JavascriptExecutor) d1;
 	     jse.executeScript("window.scrollBy(0,900)");
 	}
-	public void TakeScreenshot(WebDriver d1) throws IOException
+	public String TakeScreenshot(WebDriver d1,String screenshotname) throws IOException
 	{
 		 TakesScreenshot driver= (TakesScreenshot) d1;
 	       
          File TEMPFILE = driver.getScreenshotAs(OutputType.FILE);
-         File newfile=new File("./images/vtiger.jpg");
+         File newfile=new File("./images1/vtiger"+screenshotname+".jpg");
          FileUtils.copyFile(TEMPFILE,newfile);
+         return newfile.getAbsolutePath();
 	}
 	public void switchtowindow(WebDriver d1, String childurl)
 	{

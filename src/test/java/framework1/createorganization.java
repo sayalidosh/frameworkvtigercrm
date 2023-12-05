@@ -11,24 +11,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 import commonutils.Webdriverutil;
 import commonutils.excelutils;
 import commonutils.fileutils;
+import commonutils.javautils;
 
 /**
  * 
  */
 public class createorganization {
-
+@Test
+public void organization() throws IOException, InterruptedException {
 	
-	public static void main(String[] args) throws IOException, InterruptedException {
-		// TODO Auto-generated method stub
-
+	
 		final WebDriver d1;
 		fileutils Pfile=new fileutils();
 		Webdriverutil wutil=new Webdriverutil();
 		excelutils exfile=new excelutils();
+		javautils jutil=new javautils();
 		//read data from properties file
 		String BROWSER = Pfile.getDataFromPropertyFile("browser");
 		String URL = Pfile.getDataFromPropertyFile("url");
@@ -66,7 +68,7 @@ public class createorganization {
 		   //click on plus image
 		   d1.findElement(By.cssSelector("img[title='Create Organization...']")).click();
 		   //to enter org name
-	       d1.findElement(By.name("accountname")).sendKeys(Orgname);
+	       d1.findElement(By.name("accountname")).sendKeys(Orgname+jutil.getRandomnumver());
 	     //to click on group radio button
 	       d1.findElement(By.cssSelector("input[value='T']")).click();
 	     //dropdown webelement
@@ -91,5 +93,5 @@ public class createorganization {
 	       
 	}
 
-};
+}
  

@@ -4,11 +4,11 @@
   <test thread-count="5" name="Test">
 	  <groups>
 		  <run>
-			  <include name="shopping"></include>
+			  <include name="SmokeSuite"></include>
 		  </run>
 	  </groups>
     <classes>
-      <class name="onlinetesting.test1"/>
+      <class name="framework1.createorgnizationpomtestng"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

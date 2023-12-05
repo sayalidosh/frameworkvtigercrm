@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng1.ltest3">
+      <class name="framework1.createcontacttestng">
         <methods>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="home"/>
+          <include name="Amconf"/>
+          <include name="module1"/>
+          <include name="Asconf"/>
+          <include name="Acconf"/>
+          <include name="Bmconf"/>
+          <include name="facebook"/>
+          <include name="Bsconf"/>
+          <include name="Bcconf"/>
         </methods>
-      </class> <!-- testng1.ltest3 -->
+      </class> <!-- framework1.createcontacttestng -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

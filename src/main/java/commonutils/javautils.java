@@ -14,7 +14,7 @@ public class javautils {
 	public int getRandomnumver()
 	{
 		Random r=new Random();
-		 int ran = r.nextInt(10);
+		 int ran = r.nextInt(100);
 		 return ran;
 	}
 }

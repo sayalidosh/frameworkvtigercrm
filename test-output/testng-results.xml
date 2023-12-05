@@ -1,25 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[----connect to data base]]>
+    </line>
+    <line>
+      <![CDATA[click on contact]]>
+    </line>
+    <line>
+      <![CDATA[create contact]]>
+    </line>
+    <line>
+      <![CDATA[enter thr first name]]>
+    </line>
+    <line>
+      <![CDATA[enter the last name]]>
+    </line>
+    <line>
+      <![CDATA[----Disconnect to data base]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-08T15:52:36 IST" name="Suite" finished-at="2023-11-08T15:52:36 IST" duration-ms="132">
+  <suite started-at="2023-11-29T09:44:22 IST" name="Default suite" finished-at="2023-11-29T09:47:38 IST" duration-ms="195644">
     <groups>
-      <group name="shopping">
-        <method signature="test1.flipcart()[pri:0, instance:onlinetesting.test1@1ffaf86]" name="flipcart" class="onlinetesting.test1"/>
-        <method signature="test1.myntra()[pri:0, instance:onlinetesting.test1@1ffaf86]" name="myntra" class="onlinetesting.test1"/>
-      </group> <!-- shopping -->
     </groups>
-    <test started-at="2023-11-08T15:52:36 IST" name="Test" finished-at="2023-11-08T15:52:36 IST" duration-ms="132">
-      <class name="onlinetesting.test1">
-        <test-method signature="flipcart()[pri:0, instance:onlinetesting.test1@1ffaf86]" started-at="2023-11-08T15:52:36 IST" name="flipcart" finished-at="2023-11-08T15:52:36 IST" duration-ms="13" status="PASS">
+    <test started-at="2023-11-29T09:44:22 IST" name="Default test" finished-at="2023-11-29T09:47:38 IST" duration-ms="195644">
+      <class name="framework1.createcontacttestng">
+        <test-method is-config="true" signature="Bsconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:44:22 IST" name="Bsconf" finished-at="2023-11-29T09:44:22 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----connect to data base]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Bsconf -->
+        <test-method is-config="true" signature="Bcconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:44:24 IST" name="Bcconf" finished-at="2023-11-29T09:46:46 IST" duration-ms="141324" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flipcart -->
-        <test-method signature="myntra()[pri:0, instance:onlinetesting.test1@1ffaf86]" started-at="2023-11-08T15:52:36 IST" name="myntra" finished-at="2023-11-08T15:52:36 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- Bcconf -->
+        <test-method is-config="true" signature="Bmconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:46:46 IST" name="Bmconf" finished-at="2023-11-29T09:47:02 IST" duration-ms="16475" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myntra -->
-      </class> <!-- onlinetesting.test1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Bmconf -->
+        <test-method signature="acttime()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:02 IST" name="acttime" finished-at="2023-11-29T09:47:03 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acttime -->
+        <test-method is-config="true" signature="Amconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:03 IST" name="Amconf" finished-at="2023-11-29T09:47:10 IST" duration-ms="7752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amconf -->
+        <test-method is-config="true" signature="Bmconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:10 IST" name="Bmconf" finished-at="2023-11-29T09:47:13 IST" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bmconf -->
+        <test-method signature="module1()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:13 IST" name="module1" finished-at="2023-11-29T09:47:28 IST" duration-ms="14582" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [pune] but found [Administrator - Contacts - vtiger CRM 5 - Commercial Open Source CRM]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [pune] but found [Administrator - Contacts - vtiger CRM 5 - Commercial Open Source CRM]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at framework1.createcontacttestng.module1(createcontacttestng.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[click on contact]]>
+            </line>
+            <line>
+              <![CDATA[create contact]]>
+            </line>
+            <line>
+              <![CDATA[enter thr first name]]>
+            </line>
+            <line>
+              <![CDATA[enter the last name]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- module1 -->
+        <test-method is-config="true" signature="Amconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:29 IST" name="Amconf" finished-at="2023-11-29T09:47:37 IST" duration-ms="7381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amconf -->
+        <test-method signature="facebook()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:37 IST" name="facebook" finished-at="2023-11-29T09:47:37 IST" depends-on-methods="framework1.createcontacttestng.module1" duration-ms="2" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method framework1.createcontacttestng.facebook() on instance framework1.createcontacttestng@1349883 depends on not successfully finished methods 
+[framework1.createcontacttestng.module1() on instance framework1.createcontacttestng@1349883]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method framework1.createcontacttestng.facebook() on instance framework1.createcontacttestng@1349883 depends on not successfully finished methods 
+[framework1.createcontacttestng.module1() on instance framework1.createcontacttestng@1349883]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook -->
+        <test-method is-config="true" signature="Acconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:37 IST" name="Acconf" finished-at="2023-11-29T09:47:38 IST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Acconf -->
+        <test-method is-config="true" signature="Asconf()[pri:0, instance:framework1.createcontacttestng@1349883]" started-at="2023-11-29T09:47:42 IST" name="Asconf" finished-at="2023-11-29T09:47:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----Disconnect to data base]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Asconf -->
+      </class> <!-- framework1.createcontacttestng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
